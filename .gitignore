@@ -1,0 +1,11 @@
+{
+    "name": "chibiProgrammer/chibipro-php-framework",
+    "description": "chibiProgrammer is a simple web framework",
+    "license": "Apache-2.0",
+    "require": {
+        "php": "^7.3"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
