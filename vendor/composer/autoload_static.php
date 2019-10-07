@@ -10,9 +10,25 @@ class ComposerStaticInit24246073fa75e407f20078e5664b282f
         'e190730ec7f140787907396442be259b' => __DIR__ . '/../..' . '/src/functions.php',
     );
 
+    public static $prefixLengthsPsr4 = array (
+        'm' => 
+        array (
+            'm\\' => 2,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'm\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit24246073fa75e407f20078e5664b282f::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit24246073fa75e407f20078e5664b282f::$prefixDirsPsr4;
 
         }, null, ClassLoader::class);
     }
